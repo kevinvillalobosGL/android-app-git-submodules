@@ -42,7 +42,7 @@ Note that after each `git submodule update` the branches end up in a detached st
 
 
 
-#THIS WOULD BE A GREAT TIME TO OPEN ANDROID STUDIO
+# THIS WOULD BE A GREAT TIME TO OPEN ANDROID STUDIO
 
 Since Android Studio / IntelliJ have support for Git Submodules you can easily take it from there! To pull and push!
 
