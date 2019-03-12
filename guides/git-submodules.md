@@ -1,5 +1,10 @@
+#Git and ways to Implement Modules
+-----------------------------------------
 
-# Git Submodules
+This is a bit of research on git Submodules and alternatives. 
+
+
+## Git Submodules
 -----------------------------------------
 * [Git Real 2 - Submodules](https://app.pluralsight.com/player?course=code-school-git-real-2&author=gregg-pollack&name=4cebf5a9-1a17-4b3f-84f9-b0ef66b1223b&clip=0&mode=live)
 
