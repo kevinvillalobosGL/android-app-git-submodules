@@ -1,4 +1,4 @@
-#Git and ways to Implement Modules
+# Git and ways to Implement Modules
 -----------------------------------------
 
 This is a bit of research on git Submodules and alternatives. 
