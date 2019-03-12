@@ -9,10 +9,10 @@ This is a bit of research on git Submodules and alternatives.
 * [Git Real 2 - Submodules](https://app.pluralsight.com/player?course=code-school-git-real-2&author=gregg-pollack&name=4cebf5a9-1a17-4b3f-84f9-b0ef66b1223b&clip=0&mode=live)
 
 
-###Pros:
+### Pros:
 	- Native Support on Android Studio/IntelliJ 
 
-###Cons:
+### Cons:
 	- Requires more ceremonies on each Push and Pull
 	- Each Git Submodule gets deathed (headless state) after aL git submodule update
 
@@ -24,10 +24,10 @@ This is a bit of research on git Submodules and alternatives.
 * [git subtree tutorial and demo](https://www.youtube.com/watch?v=t3Qhon7burE)
 
 
-###Pros:
+### Pros:
 	- Lack of Documentation 
 
-###Cons: 
+### Cons: 
 	- No IntelliJ Support
 
 
