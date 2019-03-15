@@ -1,7 +1,7 @@
 # How to Initialize a Git Submodule Project....
 -----------------------------------------------
 
-So Basically Whay I did, was to create two repositories in GitHub:
+So basically, What I did was to create two repositories in GitHub:
 
 ```
 	App
