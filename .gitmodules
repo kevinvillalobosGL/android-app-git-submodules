@@ -1,3 +1,6 @@
 [submodule "android_framework"]
 	path = android_framework
 	url = https://github.com/kevinvillalobosGL/android_framework.git
+[submodule "android_model"]
+	path = android_model
+	url = https://github.com/kevinvillalobosGL/android_model.git

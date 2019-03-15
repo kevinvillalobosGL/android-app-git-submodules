@@ -1,1 +1,1 @@
-include ':app', ':android_framework'
+include ':app', ':android_framework', ':android_model'
