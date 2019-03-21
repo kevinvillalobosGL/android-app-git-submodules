@@ -8,7 +8,8 @@ import com.gl.kev.framework.ui.BaseActivity
 class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>() {
 
     override fun initViews(savedInstanceState: Bundle?) {
-
+        mViewModel.getPhotos()
+        mViewModel.getTodos()
     }
 
     override fun getLayout(): Int {

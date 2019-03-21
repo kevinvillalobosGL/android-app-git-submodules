@@ -15,6 +15,9 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "BASE_ENDPOINT_URL", "\"https://jsonplaceholder.typicode.com\"")
+
     }
     buildTypes {
         release {
@@ -52,4 +55,13 @@ dependencies {
     //Dagger
     implementation "com.google.dagger:dagger:$rootProject.dagger_version"
     kapt "com.google.dagger:dagger-compiler:$rootProject.dagger_version"
+
+    //Network
+    implementation "com.amitshekhar.android:rx2-android-networking:$rootProject.rx2Networking_version"
+
+
+    //Unit Testing
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }

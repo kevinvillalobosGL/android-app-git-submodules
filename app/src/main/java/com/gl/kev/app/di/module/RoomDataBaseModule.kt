@@ -3,7 +3,9 @@ package com.gl.kev.app.di.module
 import android.app.Application
 import androidx.room.Room
 import com.gl.kev.app.data.DataManager
-import com.gl.kev.app.data.local.AppDataManager
+import com.gl.kev.app.data.api.ApiHelper
+import com.gl.kev.app.data.api.AppApiHelper
+import com.gl.kev.app.data.AppDataManager
 import com.gl.kev.app.data.local.db.AppDataBase
 import com.gl.kev.app.data.local.db.AppDbHelper
 import com.gl.kev.app.data.local.db.DbHelper
@@ -14,7 +16,7 @@ import dagger.Provides
 import javax.inject.Singleton
 
 @Module
-class ApplicationModule(private val mApplication: Application) {
+class RoomDataBaseModule(private val mApplication: Application) {
 
     @Provides
     @DatabaseInfo
