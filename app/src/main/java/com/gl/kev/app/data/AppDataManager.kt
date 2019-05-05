@@ -1,5 +1,6 @@
 package com.gl.kev.app.data
 
+import android.util.Log
 import com.gl.kev.app.data.api.ApiHelper
 import com.gl.kev.app.data.local.db.DbHelper
 import com.gl.kev.framework.data.BaseDataManager
@@ -35,12 +36,15 @@ class AppDataManager @Inject constructor(
         getCompositeDisposable().add(
             mApiHelper.doGetPhotos()
                 .subscribeOn(mSchedulerProvider.io())
+                .map {
+                    mDbHelper.getPhotoDao().insertAll(it)
+                    it
+                }
                 .observeOn(mSchedulerProvider.io())
                 .subscribe(Consumer {
-                    mDbHelper.getPhotoDao().insertAll(it)
+                    Log.i("Demo", "I retrieved and saved ${it.size} photos")
                 }, failure)
         )
-        //TODO: test this...
     }
 
     override fun getDbHelper(): DbHelper {
