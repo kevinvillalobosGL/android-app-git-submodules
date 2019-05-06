@@ -1,4 +1,4 @@
-package com.gl.kev.app.ui
+package com.gl.kev.app.ui.main
 
 import android.os.Bundle
 import com.gl.kev.app.R

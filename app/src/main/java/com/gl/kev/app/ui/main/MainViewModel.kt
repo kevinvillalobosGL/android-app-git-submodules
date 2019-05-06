@@ -1,4 +1,4 @@
-package com.gl.kev.app.ui
+package com.gl.kev.app.ui.main
 
 import android.app.Application
 import android.util.Log
@@ -35,6 +35,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             Consumer {
                 Log.e("App", it.message, it)
             })
+    }
+
+    override fun onCleared() {
+        super.onCleared()
     }
 
 }
