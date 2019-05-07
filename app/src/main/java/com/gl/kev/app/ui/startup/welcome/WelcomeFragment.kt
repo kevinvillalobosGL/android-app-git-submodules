@@ -3,7 +3,6 @@ package com.gl.kev.app.ui.startup.welcome
 
 import com.gl.kev.app.R
 import com.gl.kev.app.databinding.FragmentWelcomeBinding
-import com.gl.kev.app.ui.main.MainViewModel
 import com.gl.kev.app.ui.startup.StartupViewModel
 import com.gl.kev.framework.ui.BaseActivity
 import com.gl.kev.framework.ui.BaseFragment
@@ -13,7 +12,9 @@ class WelcomeFragment : BaseFragment<FragmentWelcomeBinding, StartupViewModel>()
 
     override fun initViews() {
         mBinding.btWelcome.setOnClickListener {
-            //TODO:
+            mViewModel.coordinator.nextNavigation?.let {
+                it(activity!!, null)
+            }
         }
     }
 

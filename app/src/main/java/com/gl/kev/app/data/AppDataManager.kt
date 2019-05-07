@@ -4,6 +4,7 @@ import android.util.Log
 import com.gl.kev.app.data.api.ApiHelper
 import com.gl.kev.app.data.local.db.DbHelper
 import com.gl.kev.framework.data.BaseDataManager
+import com.gl.kev.framework.utils.rx.SchedulerProvider
 import com.gl.kev.model.io.PhotoResponse
 import com.gl.kev.model.io.TodoResponse
 import io.reactivex.functions.Consumer
@@ -11,8 +12,9 @@ import javax.inject.Inject
 
 class AppDataManager @Inject constructor(
     private val mDbHelper: DbHelper,
-    private val mApiHelper: ApiHelper
-) : DataManager, BaseDataManager() {
+    private val mApiHelper: ApiHelper,
+    mSchedulerProvider: SchedulerProvider
+) : DataManager, BaseDataManager(mSchedulerProvider) {
 
     override fun getTodos(response: Consumer<TodoResponse>, failure: Consumer<Throwable>) {
         getCompositeDisposable().add(
@@ -54,6 +56,5 @@ class AppDataManager @Inject constructor(
     override fun getApiHelper(): ApiHelper {
         return mApiHelper
     }
-
 
 }

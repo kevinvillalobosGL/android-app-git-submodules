@@ -19,7 +19,7 @@ class App : Application() {
         mApplicationComponent = DaggerApplicationComponent
             .builder()
             .roomDataBaseModule(RoomDataBaseModule(this))
-            .restApiModule(RestApiModule(this))
+            .restApiModule(RestApiModule())
             .coordinatorModule(CoordinatorModule(this))
             .build()
 

@@ -5,25 +5,26 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.startup.welcome.WelcomeFragment">
+        tools:context=".ui.startup.next.StartupFragment">
 
         <TextView
-            android:id="@+id/txv_welcome"
+            android:id="@+id/txv_everything"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="@string/welcome" />
+            android:gravity="center"
+            android:text="This is the beginning of Everything" />
 
         <Button
-            android:id="@+id/bt_welcome"
+            android:id="@+id/bt_42"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/txv_welcome"
+            android:layout_below="@id/txv_everything"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="20dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="20dp"
-            android:text="Next" />
+            android:text="42" />
 
     </RelativeLayout>
 </layout>

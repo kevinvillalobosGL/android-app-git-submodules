@@ -21,6 +21,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         mDataManager.getPhotos(
             Consumer {
                 Log.e("App", "I retrieved ${it.size} photos")
+                mDataManager.getDbHelper().getPhotoDao().insertAll(it)
             },
             Consumer {
                 Log.e("App", it.message, it)
@@ -31,6 +32,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         mDataManager.getTodos(
             Consumer {
                 Log.e("App", "I retrieved ${it.size} 'todos'")
+
             },
             Consumer {
                 Log.e("App", it.message, it)

@@ -10,6 +10,7 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>() {
     override fun initViews(savedInstanceState: Bundle?) {
         mViewModel.getPhotos()
         mViewModel.getTodos()
+        showGeneralAlertDialog("This is the End!!")
     }
 
     override fun getLayout(): Int {

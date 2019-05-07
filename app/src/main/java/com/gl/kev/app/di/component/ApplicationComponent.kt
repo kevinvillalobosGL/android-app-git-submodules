@@ -5,7 +5,7 @@ import com.gl.kev.app.di.module.CoordinatorModule
 import com.gl.kev.app.di.module.RestApiModule
 import com.gl.kev.app.di.module.RoomDataBaseModule
 import com.gl.kev.app.ui.main.MainViewModel
-import com.gl.kev.app.ui.next.NextViewModel
+import com.gl.kev.app.ui.next.SecondViewViewModel
 import com.gl.kev.app.ui.startup.StartupViewModel
 import dagger.Component
 import javax.inject.Singleton
@@ -18,7 +18,7 @@ interface ApplicationComponent {
 
     fun inject(viewModel: MainViewModel)
 
-    fun inject(viewModel: NextViewModel)
+    fun inject(viewModel: SecondViewViewModel)
 
     fun inject(viewModel: StartupViewModel)
 }

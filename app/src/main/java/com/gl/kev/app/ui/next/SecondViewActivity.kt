@@ -5,10 +5,14 @@ import com.gl.kev.app.R
 import com.gl.kev.app.databinding.ActivityNextBinding
 import com.gl.kev.framework.ui.BaseActivity
 
-class NextActivity : BaseActivity<ActivityNextBinding, NextViewModel>() {
+class SecondViewActivity : BaseActivity<ActivityNextBinding, SecondViewViewModel>() {
 
     override fun initViews(savedInstanceState: Bundle?) {
-
+        mBinding.btWelcome.setOnClickListener {
+            mViewModel.coordinator.nextNavigation?.let {
+                it(this, null)
+            }
+        }
     }
 
     override fun getLayout(): Int {
